@@ -41,8 +41,8 @@ body > .header {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0em;
+    /* line-height: 15px; */
+    /* letter-spacing: 0em; */
     text-align: left;
     color:#E3B873;
     height: 10px;
@@ -51,13 +51,18 @@ body > .header {
 .header-navigation {
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    width: 580px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
 }
-.header-navigation_item {
-    margin-right: 47px;
-}
-.header-navigation_item:last-child {
-    margin-right: 0;
-}
+/* .header-navigation_item { */
+    /* margin-right: 47px; */
+/* } */
+/* .header-navigation_item:last-child { */
+    /* margin-right: 0; */
+/* } */
 .header-navigation_item a {
     text-decoration: none;
     color: white;
@@ -67,9 +72,14 @@ body > .header {
 }    
 .tel {
     color:#E3B873;
+    /* Свойство display: inline препятствует работе свойства width, height
+    Попробуйте установить для свойства display значение, отличное от inline. */
+    width: 126px;
+    height: 16px;
 }
 .header_button {
     font-family: 'Nunito Sans';
+    font-style: italic;
     font-weight: 400;
     font-size: 11px;
     line-height: 15px;
@@ -77,11 +87,12 @@ body > .header {
     text-transform: uppercase;
     color: #FFFFFF;
     width: 161px;
-    height: 45px;
-    padding: 13px 33px;
+    height: 37px;
+    padding: 0px;
     background: #E3B873;
     border-radius: 2px;
     border: none;
+    cursor: pointer;
 }
 @media screen and (max-width: 375px) {
     .header-navigation, .header_button {
@@ -95,11 +106,12 @@ body > .header {
     box-shadow: 0 0 0 1000px rgba(0,0,0,0.7) inset;
 }
 .hero_container {
-    position: absolute;
-    width: 100%;
+    /* position: absolute; */
+    width: 676px;
     height: 305px;
-    left: 684px;
-    top: 277px;
+    /* left: 684px; */
+    /* top: 277px; */
+    padding: 194px 0 0 134px;
 }
 .title {
     font-family: 'Yeseva One';
