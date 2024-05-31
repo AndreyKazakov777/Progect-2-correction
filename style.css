@@ -23,7 +23,7 @@ body > .header {
 }
 .container {
     margin: auto;
-    margin-top: 24px;
+    /* margin-top: 24px; */
     display: flex;
     /* height: 45px; */
     max-width: 1256px;
@@ -449,6 +449,9 @@ button#bt2 {
   position: relative;
     margin-top: 30px;
 }
+.video {
+    box-shadow: 0 0 10px rgba(0 0 0 / 20%);
+}
 .video .painter {
     filter: brightness(20%);
 }
@@ -496,7 +499,7 @@ button#bt2 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: -90px;
+    /* margin-left: -90px; */
 }
 .three_form_input .input {
     border: none;
@@ -530,6 +533,7 @@ button#bt2 {
     box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
     border-radius: 2px;
     border: none;
+    cursor: pointer;
 }
 .three_checkbox {
     display: flex;
@@ -555,6 +559,10 @@ button#bt2 {
     height: 18px;
     width: 18px;
 }
+.input[type='checkbox']:checked {
+    background-color: #FF0; /* Подсветка будет заметной */
+    font-weight: bold; /* Текст будет выделяться жирностью */
+  }
 @media screen and (max-width: 375px) {
    .three {
     background-color:#131313;
@@ -1466,11 +1474,13 @@ input[class="eight_input"]::-webkit-input-placeholder {
     
 
 .footer {
+    display: flex;
     background-color: black;
     font-family: Nunito Sans;
     font-size: 11px;
     font-weight: 400;
     line-height: 15px;
+    height: 133px;
 }
 
 @media screen and (max-width: 375px) {
