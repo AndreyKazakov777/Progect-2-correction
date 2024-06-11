@@ -3,16 +3,13 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 body {
-    margin: 0;
-
-    /* Контент каждой секции должен быть обёрнут в контейнер с фиксированной максимальной шириной (max-width: 1440px) и автоматическими отступами справа и слева (margin: 0 auto). Добавил: ; */
     margin: 0 auto;
     max-width: 1440px;
 }
 section {
     width: 100%;
 }
-body > .header {
+.header {
     display: flex;
     background-color: black;
     font-family: Nunito Sans;
@@ -23,26 +20,20 @@ body > .header {
 }
 .container {
     margin: auto;
-    /* margin-top: 24px; */
     display: flex;
-    /* height: 45px; */
     max-width: 1256px;
-    /* border-radius: 2px; */
     font-family: sans-serif;
     text-align: center;
     align-items: center;
     justify-content: space-between; 
     height: 37px;
     width: 100%;
-    /* border-radius: 0px; */
 }
 .logo {
     font-family: sans-serif;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 400;
-    /* line-height: 15px; */
-    /* letter-spacing: 0em; */
     text-align: left;
     color:#E3B873;
     height: 10px;
@@ -57,12 +48,6 @@ body > .header {
     padding: 0;
     margin: 0;
 }
-/* .header-navigation_item { */
-    /* margin-right: 47px; */
-/* } */
-/* .header-navigation_item:last-child { */
-    /* margin-right: 0; */
-/* } */
 .header-navigation_item a {
     text-decoration: none;
     color: white;
@@ -72,10 +57,6 @@ body > .header {
 }    
 .tel {
     color:#E3B873;
-    /* Свойство display: inline препятствует работе свойства width, height
-    Попробуйте установить для свойства display значение, отличное от inline. */
-    width: 126px;
-    height: 16px;
 }
 .header_button {
     font-family: 'Nunito Sans';
@@ -98,6 +79,16 @@ body > .header {
     .header-navigation, .header_button {
         display: none;
     }
+    .header {
+        height: 57px; 
+    }
+    .container {
+        margin: auto 18px;
+    }
+    .tel {
+        text-decoration: none;
+        color: white;
+    }
 }
 .hero {
     background-image: url(img/image_hero.jpg);
@@ -106,11 +97,8 @@ body > .header {
     box-shadow: 0 0 0 1000px rgba(0,0,0,0.7) inset;
 }
 .hero_container {
-    /* position: absolute; */
     width: 676px;
     height: 305px;
-    /* left: 684px; */
-    /* top: 277px; */
     padding: 194px 0 0 134px;
 }
 .title {
@@ -118,7 +106,7 @@ body > .header {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 133%;
+    line-height: 53px;
     text-transform: uppercase;
     color: white;
     margin: 0;
@@ -129,14 +117,14 @@ body > .header {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 133%;
+    line-height: 53px;
 }
 .p1 {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    line-height: 163%;
+    line-height: 33px;
     color: #FFFFFF;
     width: 504px;
     height: 89px;
@@ -166,13 +154,7 @@ body > .header {
     border-radius: 2px;
     border: 0px;
 }
-/* button#bt1 {
-    left: 134px;  
-    top: 531px;
-} */
-button#bt2 {
-    /* left: 361px;  
-    top: 531px;   */
+#bt2 {
     margin-left: 20px;
 }
 @media screen and (max-width: 375px) {
@@ -198,31 +180,34 @@ button#bt2 {
         letter-spacing: 0em;
         text-align: left;
         margin: 0px;       
-}
+    }
     .p1 {
         font-family: Nunito Sans;
-        font-size: 14px;
+        font-size: 14px; 
         font-weight: 400;
         line-height: 19px;
         letter-spacing: 0em;
         text-align: left;
         margin-bottom: 32px;
-    }
-    .hero_button {
+        width: 100%;
+        height: 94px;
+        }
+       .hero_button {
         height: 51px;
-        width: 338.607421875px;
-        left: 18px;
-        top: 344px;
+        width: 100%;
+        /* left: 18px; */
+        /* top: 344px; */
     }
     #bt2 {
-        margin-left: 0px;
+        margin-left: 0;
         margin-top: 26px;
-    }
+        content: string;
+    }  
 }
+   
 .two {
     display: flex;
     background-color: black;
-    /* padding-top: 107px; */
     height: 1074px;
 }
 .two_container {
@@ -233,7 +218,8 @@ button#bt2 {
     height: 552px;
     margin: 107px auto 0;
 }
-.two_container .two_container_left {
+/* .two_container  */
+.two_container_left {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
@@ -252,17 +238,14 @@ button#bt2 {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    /* padding-right: 56px; */
     margin: 0;
     list-style-type: none;
     width: 623px;
     height: 24px;
 }
 .two_container_right {
-    /* margin-top: 45px; */
     display: flex;
     align-self: stretch;
-    /* width: 100%; */
 }
 .two_img {
     margin-top: 45px;
@@ -270,14 +253,16 @@ button#bt2 {
     align-self: stretch;
     width: 679px;
 }
-.two_container_left .two_description {
+/* .two_container_left  */
+.two_description {
     margin: 34px 0 0;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 27px;
 }
-.two_container_left .two_info {
+/* .two_container_left  */
+.two_info {
     margin-top: 42px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -285,8 +270,8 @@ button#bt2 {
     row-gap: 34px;
 }
 .arrows_points {
-    height: 13.276092529296875px;
-    width: 205.68312072753906px;
+    height: 13px;
+    width: 205px;
     margin-top: 80px;
     display: flex;
     list-style-type: none;
@@ -327,7 +312,7 @@ button#bt2 {
     margin: 0px;
     height: 66px;
     width: 253px;
-    top: 176.3602294921875px;
+    top: 176.3px;
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -365,18 +350,20 @@ button#bt2 {
 }
 @media screen and (max-width: 375px) {
     .two {
-        padding: 36px 18px 0 18px;
+        padding: 0 18px;
     }
     .two_container {
         display: flex;
         flex-direction: column;
         position: relative;
-        width: 374px;
+        width: 100%;
+        margin: 0;
     }
-  .two_container_left {
-    display: flex;
-    justify-content: center;
-    width: 374px;
+    .two_container_left {
+        display: flex;
+        justify-content: center;
+        /* width: 374px; */
+        margin: 36px auto 0;
   }  
     .two_h2 {
         font-family: Yeseva One;
@@ -386,28 +373,42 @@ button#bt2 {
         letter-spacing: -0.07em;
         text-align: center;
         height: 66px;
-        width: 228px;
+        width: 130px;
         display: flex;
         justify-content: center;
-        margin-left: 50px;
+        margin: auto;
 }        
-.two_description {
-    font-family: Nunito Sans;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
-    height: 86px;
-    width: 311px;
+    .two_description {
+        font-family: Nunito Sans;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        height: 86px;
+        width: 311px;
+        margin: 22px auto 0;
 }
+    .br_two {
+        display: none;
+    }
     .arrows_points, .two_ul, .two_a {
         display: none;
     }
-.two_img {
-    height: 241.3549346923828px;
-    width: 340px;
+    .two_info {
+        margin-top: 300px;
+    }
+    .two_img {
+        height: 242px;
+        width: 340px;
+        margin-top: -640px;
 }
+    .two_h3{
+        font-size: 14px;
+    }
+    .two_span {
+        font-size: 11px;
+    }
 }
 
 .online-control_container {
@@ -456,14 +457,15 @@ button#bt2 {
     filter: brightness(20%);
 }
 
-.video .play {
+/* .video  */
+.play {
     height: 135px;
     width: 135px;
     position: absolute;
     z-index: 1;
 }
 .three_line {
-    height: 1.543344259262085px;
+    height: 1.5px;
     width: 55px;
     border-radius: 30px;
     background-color: #E3B873;
@@ -490,7 +492,6 @@ button#bt2 {
     justify-content: space-between;
     margin: auto;
     height: 51px;
-    /* width: 769px; */
     width: 100%;
     margin-top: 95px;
 }
@@ -499,7 +500,6 @@ button#bt2 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* margin-left: -90px; */
 }
 .three_form_input .input {
     border: none;
@@ -571,15 +571,15 @@ button#bt2 {
     .online-control_container {
         width: 338px;
         position: relative;
-        padding-top: 85px;
+        /* padding-top: 85px; */
     }
     .painter {
         height: 207px;
         width: 340px;
     }
     .play {
-        height: 40px;
-        width: 40px;
+        height: 45px;
+        width: 45px;
     }
     .three_line {
         margin-top: 28px;
@@ -599,9 +599,17 @@ button#bt2 {
     .three_form {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: 20px;
         justify-content: start;
-        
+        height: 100%;
+        align-items: flex-start;
+
+    }
+    .three_form_input .label {
+        color: #7f7f7f;
+    }
+    #name {
+        padding-bottom: 63px;
     }
     input[class="input"]::-webkit-input-placeholder {
             color: white;
@@ -614,109 +622,17 @@ button#bt2 {
         color: #FFFFFF;
     }
     .three_checkbox {
-        margin-bottom: 38px;
+        margin-top: -50px;
+        margin-bottom: 80px;
+        width: 100%;
     }
     .three_button {
-        margin-top: 44px;
+        margin-top: 110px;
+        margin-bottom: -75px;
         width: 340px;
         height: 51px;
     }
 }
-
-/* .types_of_repair_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 148px;
-}
-.types_of_repair_container .types_of {
-    margin: 0px;
-    font-family: Yeseva One;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
-}
-.types_of_repair_container .tour_png {
-    height: 28.000049591064453px;
-    width: 114px;
-    margin: 13px auto 0px;
-}
-.four_info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 31px;
-}
-.four_info .repair_type {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 608px;
-    width: 392px;
-    margin-right: 30px;
-}
-.repair_type image {
-    position: absolute;
-    top: 0;
-}
-.repair_type .info {
-    height: 313px;
-    width: 330px;
-    position: absolute;
-    bottom: 0;
-}
-.info .info_list {
-    height: 286px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-    padding: 25px 34px;
-}
-.info_list .header {
-    font-family: Yeseva One;
-    height: 21px;
-    width: 228px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #363636;
-    letter-spacing: 0em;
-    text-align: left;
-}
-.info_list .list {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 27px;
-    color: #959595;
-    padding: 0px;
-    margin: 13px 0 0 0;
-    list-style-type: none;
-}
-.info .from {
-    position: absolute;
-    bottom: 0;
-    height: 54px;
-    width: 228px;
-    background-color: #E3B873;
-    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: white;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-} */
-
 .types_of_repair_container {
     display: flex;
     flex-direction: column;
@@ -733,7 +649,7 @@ button#bt2 {
     letter-spacing: 0em;
 }
 .types_of_repair_container .tour_png {
-    height: 28.000049591064453px;
+    height: 28px;
     width: 114px;
     margin: 13px auto 0px;
 }
@@ -741,6 +657,8 @@ button#bt2 {
     display: flex;
     justify-content: space-between;
     margin-top: 31px;
+    width: 1236px;
+    height: 608px;
 }
 .four_info .repair_type {
     position: relative;
@@ -750,6 +668,10 @@ button#bt2 {
     height: 608px;
     width: 392px;
     margin-right: 30px;
+}
+
+.repair_type:last-child {
+    margin-right: 0;
 }
 .repair_type image {
     position: absolute;
@@ -768,7 +690,7 @@ button#bt2 {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
     padding: 25px 34px;
 }
-.info_list .header {
+.info_list .four_header {
     font-family: Yeseva One;
     height: 21px;
     width: 228px;
@@ -776,7 +698,7 @@ button#bt2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    color: #363636;
+    /* color: #363636; */
     letter-spacing: 0em;
     text-align: left;
 }
@@ -813,23 +735,40 @@ button#bt2 {
 
 @media screen and (max-width: 375px){
     .types_of_repair_container {
-        margin: 64px;      
+        margin-top: 83px; 
+        padding: 0 18px;     
     }
     .four_info {
         display: flex;
         flex-direction: column;
-        padding: 0 18px;
+        /* padding: 0 18px; */
+        width: 100%;
+        height: 100%;
     }
-    .repair_type {
+    .four_info .repair_type {
         margin-bottom: 59px;
+        width: 100%;
+        height: 505px;
+    }
+    .image {
+        width: 340px;
+        height: 365px;
+    }
+    .info .info_list {
+        width: 270px;
+        margin-left: -6px;
+        /* height: 100%; */
+    }
+    .info .from {
+        margin-left: -4px;
     }
 }
  
 .five_section {
     display: flex;
-    height: 725.44px;
+    height: 725px;
     width: 100%;
-    margin-bottom: 242.09px;
+    margin-bottom: 242px;
     margin-top: 124px;
 }
 .house-half {
@@ -839,7 +778,6 @@ button#bt2 {
     width: 50%;
 }
 .house_bgr {
-    position: absolute;
     z-index: 1;
 }
 .five_01_04 {
@@ -848,24 +786,24 @@ button#bt2 {
     display: flex;
     flex-direction: column;
     font-size: 14px;
-    line-height: 19.1px;
+    line-height: 19px;
     vertical-align: top;
     color: #363636;  
     justify-content: space-between;
-    height: 473.6193542480469px;
-    width: 374.807373046875px;
+    height: 473.6px;
+    width: 374.8px;
     margin: 117.14px 79.19px 54.24px 249px;
 }
 .five_01-04_text {
-    height: 41.83566665649414px;
-    width: 378.807373046875px;
+    height: 41.8px;
+    width: 378.8px;
     display: flex;
     align-items: center;
 }
 .five_circle {
     display: flex;
-    height: 49.75705337524414px;
-    width: 49.75705337524414px;
+    height: 49.76px;
+    width: 49.76px;
     border-radius: 30px;
     font-family: Yeseva One;
     font-size: 18px;
@@ -880,6 +818,8 @@ button#bt2 {
     box-shadow: 0px 5px 15px 0px #E3B87326;
 }    
 .five_01-04_p {
+    display: flex;
+    align-items: center;
     height: 39px;
     width: 320px;
     margin: 0px;
@@ -912,8 +852,6 @@ button#bt2 {
     margin: 28px 105px 39px 104px;
     height: 47px;
     width: 297px;
-    left: 937.9998474121094px;
-    top: 3607.0000610351562px;
     font-family: Nunito Sans;
     align-items: center;
     text-align: center;
@@ -984,7 +922,7 @@ input[class="five_input"]::-webkit-input-placeholder {
   }
 .i_agree {
     height: 18px;
-    width: 385.61956787109375px;
+    /* width: 385.61956787109375px; */
     color: #FFFFFF;
     font-family: Nunito Sans;
     font-size: 14px;
@@ -1016,12 +954,13 @@ input[class="five_input"]::-webkit-input-placeholder {
     display: flex;
     margin-top: 38.44px;
     height: 72px;
-    width: 441.0000305175781px;
+    width: 441px;
     align-items: center;
 }
 .pig {
     height: 72px;
     width: 72px;
+    margin-right: 25px;
 }
 .five_help {
     font-family: Nunito Sans;
@@ -1044,8 +983,7 @@ input[class="five_input"]::-webkit-input-placeholder {
     justify-content: center;
     position: absolute;
     height: 864px;
-    /* width: 1440px; */
-    width: 100%;
+    width: 1440px;
     background: #181818; 
     opacity: .9;
 }
@@ -1075,7 +1013,7 @@ input[class="five_input"]::-webkit-input-placeholder {
     margin-left: 99px;
     margin-bottom: 0px;
     padding: 0px;
-    height: 515.9990234375px;
+    height: 516px;
     width: 299px;  
 }
 .six_li {
@@ -1087,6 +1025,10 @@ input[class="five_input"]::-webkit-input-placeholder {
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 25px;
+    height: 24px;
+}
+.six_li:last-child {
+    margin-bottom: 0;
 }
 .six_a {
     text-decoration: none;
@@ -1100,16 +1042,16 @@ input[class="five_input"]::-webkit-input-placeholder {
 }   
 .six_img62 {
     position: absolute;
-    height: 557.8831787109375px;
-    width: 354px;
-    margin-top: -41.16px;
+    height: 556.86px;
+    width: 353.81px;
+    margin-top: -40.53px;
     margin-left: 587px;
 
 }
 .six_img63 {
     position: absolute;
-    height: 349.3717041015625px;
-    width: 354px;
+    height: 349.47px;
+    width: 353.81px;
     margin-left: 587px;
     margin-top: 555.83px;
 }
@@ -1122,39 +1064,61 @@ input[class="five_input"]::-webkit-input-placeholder {
 }
 .six_img65 {
     position: absolute;
-    margin: 199.47px 102px 0px 984px;
-    height: 624.8848266601562px;
+    margin: 199.24px 102px 0px 984px;
+    height: 625.23px;
     width: 354px;
 }
 @media screen and (max-width: 375px) {
+    .six {
+        padding: 0 18px;
+    }
     .six_black_bgr, .six_text {
         display: none;
     }
     .six_h2 {
-        margin-top: -93px;
+        position: relative;
+        /* margin-top: -93px; */
         text-align: center;
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 338px;
+        font-size: 22px;
+        /* margin-left: 0px;
+        margin-right: 0px; */
+        width: 340px;
+        height: 66px;
+        margin: 0 0 24px 0;
     }
     .six_bgr {
         width: none;
-        margin-left: 18px;
+        /* margin-left: 18px; */
         text-align: center;
         height: 242px;
         width: 340px;
+        background-image: none;
+
+        
     }
-    .six_img62, .six_img63, .six_img64, .six_img65 {
+    .six_bgr_small {
+        background-image: url(img/6.1.png);
+        height: 242px;
+        width: 340px;
+    }
+
+    .six_img62, 
+    .six_img63, 
+    .six_img64, 
+    .six_img65 {
         display: none;
     }
 
 }
 .seven {
-    height: 1109px;
+    height: 1020px;
     width: 100%;
+    margin-top: 110.47px;
 }
 .seven_h3 {
-    margin: 110.47px 0px 13.4px 0px;
+    margin: 0 auto 13.22px;
+    width: 257px;
+    height: 26px;
     font-family: Yeseva One;
     font-size: 20px;
     font-weight: 400;
@@ -1165,20 +1129,19 @@ input[class="five_input"]::-webkit-input-placeholder {
 }
 .seven_svg {
     margin: auto;
-    height: 27.62010955810547px;
+    height: 27.62px;
     width: 114px;
     background-image: url(img/svg7.svg);
     color: #E3B873;   
 }
 .seven_p {
     margin: auto;
-    margin-top: 24.25px; 
+    margin-top: 24.16px; 
     font-family: Nunito Sans;
     font-size: 18px;
     font-weight: 400;
     line-height: 29px;
     text-align: center;
-    font-family: Nunito Sans;
     height: 57px;
     width: 476px;
 }
@@ -1244,7 +1207,7 @@ input[class="five_input"]::-webkit-input-placeholder {
 .eight {
     position: relative;
     display: flex;
-    height: 953.8981323242188px;
+    height: 953.9px;
     background: rgba(0,0,0, 0.5);    
     background: #181818;
     justify-content: center;
@@ -1257,14 +1220,15 @@ input[class="five_input"]::-webkit-input-placeholder {
     text-align: center;
     margin-top: -222.66px;  
     background-color: black;
-    height: 445.3192138671875px;
+    height: 445.32px;
     width: 883px;
     z-index: 1;
+    border: 1px solid white;
 }
 .eight_question {
-    height: 376.515625px;
+    height: 376.52px;
     width: 520px;
-    margin: 34.4px 181.5px;
+    margin: auto;
 }
 .have {
     margin: auto;
@@ -1280,7 +1244,7 @@ input[class="five_input"]::-webkit-input-placeholder {
     color: #FFFFFF;
 }
 .eight_form {
-    height: 304.71484375px;
+    height: 304.71px;
     width: 520px;
     border-radius: 0px;
     background-color: black;
@@ -1364,7 +1328,7 @@ input[class="eight_input"]::-webkit-input-placeholder {
     text-align: left;
     margin-left: 8.62px;
     color: white;
-    height: 16.23828125px;
+    height: 16.24px;
 }
 .eight_checkbox {
     position: relative;
@@ -1374,7 +1338,7 @@ input[class="eight_input"]::-webkit-input-placeholder {
 }
 .image_bgr {
     position: absolute;
-    height: 953.8981323242188px;
+    height: 953.9px;
     width: 1440px;
     opacity: .08;
 }
@@ -1382,6 +1346,8 @@ input[class="eight_input"]::-webkit-input-placeholder {
     display: flex;
     flex-direction: column;
     margin: 274.67px auto 0px;
+    width: 589px;
+    height: 199.33px;
 }
 .eight_text {
     display: flex;
@@ -1413,10 +1379,11 @@ input[class="eight_input"]::-webkit-input-placeholder {
 
 @media screen and (max-width: 375px) {
     .eight {
-        margin-top: -120px;
+        margin-top: -30px;
     }
     .eight_black {
         margin-top: 120px;
+        border: none;
     }
     .eight_question {
         display: flex;
