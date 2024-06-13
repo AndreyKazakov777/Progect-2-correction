@@ -132,7 +132,8 @@ section {
     margin-bottom: 41px;
     margin-top: 19px;
 }
-.hero_button {
+.hero_button,
+.hero_button_media {
     font-family: 'Nunito Sans';
     font-style: italic;
     font-weight: 400;
@@ -148,6 +149,7 @@ section {
     background: transparent;
     cursor: pointer;
 }
+.hero_button_media:hover ,
 .hero_button:hover {
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
@@ -156,6 +158,9 @@ section {
 }
 #bt2 {
     margin-left: 20px;
+}
+.hero_button_media {
+    display: none;
 }
 @media screen and (max-width: 375px) {
     .hero {
@@ -199,9 +204,12 @@ section {
         /* top: 344px; */
     }
     #bt2 {
+        visibility: hidden;
+    }
+    .hero_button_media {
+        visibility: visible;
         margin-left: 0;
         margin-top: 26px;
-        content: string;
     }  
 }
    
