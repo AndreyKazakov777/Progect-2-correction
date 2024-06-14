@@ -76,7 +76,8 @@ section {
     cursor: pointer;
 }
 @media screen and (max-width: 375px) {
-    .header-navigation, .header_button {
+    .header-navigation, 
+    .header_button {
         display: none;
     }
     .header {
@@ -159,8 +160,12 @@ section {
 #bt2 {
     margin-left: 20px;
 }
-.hero_button_media {
+
+@media screen and (min-width: 376px) 
+{
+   .hero_button_media {
     display: none;
+} 
 }
 @media screen and (max-width: 375px) {
     .hero {
@@ -204,10 +209,10 @@ section {
         /* top: 344px; */
     }
     #bt2 {
-        visibility: hidden;
+        display: none;
     }
     .hero_button_media {
-        visibility: visible;
+        width: 100%;
         margin-left: 0;
         margin-top: 26px;
     }  
@@ -1212,7 +1217,7 @@ input[class="five_input"]::-webkit-input-placeholder {
         display: none;
     }
 }
-.eight {
+.eight > .eight_container {
     position: relative;
     display: flex;
     height: 953.9px;
@@ -1388,15 +1393,24 @@ input[class="eight_input"]::-webkit-input-placeholder {
 @media screen and (max-width: 375px) {
     .eight {
         margin-top: -30px;
+        width: 375px;
+
     }
+    .eight_block 
     .eight_black {
         margin-top: 120px;
         border: none;
+        width: 375px;
     }
     .eight_question {
         display: flex;
         flex-direction: column;
+        width: 375px;
     }
+    .eight_form {
+        width: 100%;
+    }
+
     .eight_form_incide{
         display: flex;
         flex-direction: column;
@@ -1409,11 +1423,14 @@ input[class="eight_input"]::-webkit-input-placeholder {
         flex-direction: column;
         margin-left: 90px;
         margin-top: 7px;
-        width: 348px;
+        width: 100%;
     }
     .eight_form_question {
         margin-left: 90px;
         margin-top: 87px;
+    }
+    .eight_label {
+      width: 100%;  
     }
     .eignt_sign {
         margin-bottom: 23px;
@@ -1444,6 +1461,9 @@ input[class="eight_input"]::-webkit-input-placeholder {
         text-align: center;
         width: 340px;
         height: 70.5px;
+    }
+    .image_bgr {
+        display: none;
     }
 }
     
