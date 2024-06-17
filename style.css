@@ -1394,18 +1394,33 @@ input[class="eight_input"]::-webkit-input-placeholder {
     .eight {
         margin-top: -30px;
         width: 375px;
+        /* background: black;
+        z-index: 1;
+    } */
+    .eight_container {
+        padding: 173px 18px 49px;
+        height: 1146px;
+        background: black;
 
     }
-    .eight_block 
     .eight_black {
-        margin-top: 120px;
+        margin-top: 0;
         border: none;
-        width: 375px;
+        width: 100%;
+        z-index: -1;
     }
     .eight_question {
         display: flex;
         flex-direction: column;
         width: 375px;
+        margin: 0;
+    }
+    #eight_question,
+    .eight_input{
+        display: flex;
+        width: 339px;
+        /* padding-right: 18px; */
+        /* max-width: 375px; */
     }
     .eight_form {
         width: 100%;
@@ -1421,35 +1436,42 @@ input[class="eight_input"]::-webkit-input-placeholder {
     .eight_form_name_phone {
         display: flex;
         flex-direction: column;
-        margin-left: 90px;
-        margin-top: 7px;
-        width: 100%;
+        /* margin-left: 90px; */
+        /* margin-top: 7px; */
+        width: 339px;
+        padding-left: 18px;
     }
     .eight_form_question {
-        margin-left: 90px;
+        /* margin-left: 90px; */
         margin-top: 87px;
+        padding-left: 18px;
+    }
+    .eight_form_checkbox {
+        padding-left: 18px;
+        margin-left: 0;
     }
     .eight_label {
-      width: 100%;  
+      /* width: 100%;   */
     }
     .eignt_sign {
         margin-bottom: 23px;
     }
     .eight_form_button {
-        margin-top: -17px;
+        margin-top: 5px;
     }
     .rostov {
         display: flex;
         align-items: flex-end;
         justify-content: end;
-        margin-top: 100px;
+        margin-top: 748px;
     }
     .eight_map {
+        margin-top: 500px;
         display: block;
-    max-height: 400px;
-    max-width: 375px;
-    padding: 0 18px 0 7px;
-
+        max-height: 255px;
+        max-width: 340px;
+        /* padding: 0 18px 0 7px; */
+        z-index: -2;
 
     }
     .eight_text {
