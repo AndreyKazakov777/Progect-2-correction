@@ -262,6 +262,9 @@ section {
     align-self: stretch;
     width: 679px;
 }
+.two_img_small {
+    display: none;
+}
 .two_description {
     margin: 34px 0 0;
     font-style: normal;
@@ -370,7 +373,7 @@ section {
         display: flex;
         justify-content: center;
         margin: 36px auto 0;
-  }  
+    }  
     .two_h2 {
         font-family: Yeseva One;
         font-size: 22px;
@@ -383,7 +386,7 @@ section {
         display: flex;
         justify-content: center;
         margin: auto;
-}        
+    }        
     .two_description {
         font-family: Nunito Sans;
         font-size: 11px;
@@ -394,7 +397,7 @@ section {
         height: 86px;
         width: 311px;
         margin: 22px auto 0;
-}
+    }
     .br_two {
         display: none;
     }
@@ -407,10 +410,14 @@ section {
         margin-top: 300px;
     }
     .two_img {
+        display: none;
+    }
+    .two_img_small {
+        display: block;
         height: 242px;
         width: 340px;
         margin-top: -640px;
-}
+    }
     .two_h3{
         font-size: 14px;
     }
@@ -451,10 +458,10 @@ section {
     color: white;
 }
 .online-control_container .video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     margin-top: 30px;
 }
 .video {
@@ -566,7 +573,7 @@ section {
     opacity: 0;
     transition: .2s;
 }
-.three_checkbox:checked + three_fake::before {
+.three_checkbox:checked + .three_fake::before {
     opacity: 1;
 }
 .three_span {
@@ -578,7 +585,7 @@ section {
     text-align: left;
     margin-left: 8.62px;
     color: #181818;
-    height: 16.23828125px;
+    height: 16.24px;
 }
 @media screen and (max-width: 375px) {
    .three {
@@ -1003,6 +1010,9 @@ input[class="five_input"]::-webkit-input-placeholder {
     height: 864px;
     width: 1440px;
 }
+.six_bgr_small {
+    display: none;
+}
 .six_h2 {
     position: absolute;
     font-family: Yeseva One;
@@ -1094,16 +1104,17 @@ input[class="five_input"]::-webkit-input-placeholder {
         margin: 0 0 24px 0;
     }
     .six_bgr {
-        width: none;
         text-align: center;
         height: 242px;
         width: 340px;
         background-image: none;
     }
     .six_bgr_small {
-        background-image: url(img/6.1.png);
+        display: block;
         height: 242px;
         width: 340px;
+        position: absolute;
+        z-index: 1;
     }
     .six_img62, 
     .six_img63, 
@@ -1176,7 +1187,7 @@ input[class="five_input"]::-webkit-input-placeholder {
 }
 .fed_name, 
 .afa_name, 
-.kir_name{
+.kir_name {
     height: 42px;
     width: 178px;
     font-family: Yeseva One;
@@ -1225,7 +1236,6 @@ input[class="five_input"]::-webkit-input-placeholder {
     background: rgba(0,0,0, 0.5);    
     background: #181818;
     justify-content: center;
-    z-index: -1;
 }
 .eight_black {
     position: absolute;
@@ -1276,7 +1286,7 @@ input[class="five_input"]::-webkit-input-placeholder {
 }
 .eight_form_question {
     height: 45px;
-    width: 516.8176879882812px;
+    width: 516.82px;
     text-align: left;
     margin-top: 48.76px;
 }
@@ -1326,8 +1336,6 @@ input[class="eight_input"]::-webkit-input-placeholder {
     border: none;
 }
 .eight_form_checkbox {
-    display: flex;
-    align-items: center;
     margin: auto;
     height: 18px;
     margin-top: 33.24px;
@@ -1421,7 +1429,6 @@ input[class="eight_input"]::-webkit-input-placeholder {
         margin-top: 0;
         border: none;
         width: 100%;
-        z-index: -1;
     }
     .eight_question {
         display: flex;
@@ -1437,7 +1444,6 @@ input[class="eight_input"]::-webkit-input-placeholder {
     .eight_form {
         width: 100%;
     }
-
     .eight_form_incide{
         display: flex;
         flex-direction: column;
@@ -1460,7 +1466,7 @@ input[class="eight_input"]::-webkit-input-placeholder {
         margin-left: 0;
     }
     .eignt_sign {
-        margin-bottom: 23px;
+        margin-bottom: 30px;
     }
     .eight_button {
         margin-top: 67px;
